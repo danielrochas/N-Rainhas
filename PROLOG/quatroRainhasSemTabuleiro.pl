@@ -1,11 +1,12 @@
 
 %------------------------------------------------------------------------------------------------------------    
-% Problema das 4 rainhas
+
+% Program das N rainhas Script Prolog
 
 % Data: 12/06/2021
 
 %------------------------------------------------------------------------------------------------------------
-%
+
 % Declara procedimento para posicionamento de rainhas, exemplo Linhas = [2, 4, 1, 3]
 rainhas(N, Posicao) :- 
     
@@ -33,6 +34,7 @@ rainhas(NaoPosicionada , Posicionada , Posicao) :-
 	rainhas(NovaNaoPosicionada , [R|Posicionada], Posicao).
 
 %------------------------------------------------------------------------------------------------------------
+
 % Declara predicado de posição segura
 posicaoSegura([], _Rainha , _Nb).
 
@@ -50,7 +52,7 @@ posicaoSegura([Y|Ys], Rainha , Nb) :-
 	posicaoSegura(Ys , Rainha , Nb1).
 
 %------------------------------------------------------------------------------------------------------------
-%
+
 % Declara predicado de seleção 
 select([X|Ys], X, Ys).
 
@@ -75,7 +77,7 @@ lista_rainhas(N, [N|Linhas]) :-
     lista_rainhas(N1 , Linhas).
 
 %------------------------------------------------------------------------------------------------------------
-%
+
 % Consulta para executar programa
 % ? rainhas(4, Posicao)
 
