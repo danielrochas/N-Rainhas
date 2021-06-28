@@ -17,7 +17,7 @@
   + [https://rextester.com](https://rextester.com/edit/QJIOB78933)
 
 * Prolog
-  + [https://swish.swi-prolog.org](https://swish.swi-prolog.org/p/NRainhas.pl)
+  + [https://swish.swi-prolog.org](https://swish.swi-prolog.org/p/N-Rainhas.pl)
 
 ***
 
